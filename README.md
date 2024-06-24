@@ -21,7 +21,7 @@ Certifique-se de ter os seguintes softwares instalados no seu sistema:
 1. Clone este repositório:
 
     ```sh
-    git clone https://github.com/seu_usuario/sportefastapi.git
+    git clone https://github.com/dayvd100/apiAndScrapingSerieA.git
     cd sportefastapi
     ```
 
