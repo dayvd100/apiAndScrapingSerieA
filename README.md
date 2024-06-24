@@ -56,13 +56,15 @@ Certifique-se de ter os seguintes softwares instalados no seu sistema:
 ## Execução
 
 ### Rodando a API
-apiAndScrapingSerieA > cd sportGeApi > rodar o seguinte script
+apiAndScrapingSerieA > cd sportGeApi > 
+rodar o seguinte script:
 ```
 fastpi dev api_script.py 
 ```
 
 ## Gerando o grafico 
-apiAndScrapingSerieA > cd generatingGraphic > rodar o seguinte script
+apiAndScrapingSerieA > cd generatingGraphic > 
+rodar o seguinte script:
 ```
 python3|python graphic.py
 ```
