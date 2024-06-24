@@ -5,11 +5,10 @@ import json
 url = "https://ge.globo.com/futebol/brasileirao-serie-a/"
 
 
-# Função para obter os dados e transformar em JSON
 def getting_data_and_transforming_in_json():
     try:
-        browser = webdriver.Chrome()  # Inicializa o navegador Chrome
-        browser.get(url)  # Abre a URL no navegador
+        browser = webdriver.Chrome()
+        browser.get(url)
 
         team_names = browser.find_elements(By.XPATH, "//tbody//tr//strong")
         points = browser.find_elements(
@@ -32,7 +31,7 @@ def getting_data_and_transforming_in_json():
         return {"error": str(e)}
 
     finally:
-        browser.quit()  # Fecha o navegador ao finalizar a execução
+        browser.quit()
 
 
 if __name__ == "__main__":
