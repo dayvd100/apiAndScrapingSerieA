@@ -7,7 +7,6 @@ import requests
 import pandas as pd
 
 response = requests.get("http://127.0.0.1:8000/informations/")
-
 if response.status_code == 200:
     datas_json = response.json()
     dataframe_clubs = pd.DataFrame(datas_json)
@@ -28,15 +27,15 @@ if response.status_code == 200:
 
     plt.xticks(rotation=45, ha="right")
 
-    # Adicionar os valores em cima de cada barra
+    # valores em cima da barra
     for barra in barras:
         altura = barra.get_height()
         plt.text(
-            barra.get_x() + barra.get_width() / 2,  # Posição x do texto
-            altura,  # Posição y do texto
-            f"{altura}",  # Texto a ser exibido
-            ha="center",  # Alinhamento horizontal
-            va="bottom",  # Alinhamento vertical
+            barra.get_x() + barra.get_width() / 2,
+            altura,
+            f"{altura}",
+            ha="center",
+            va="bottom",
         )
 
     plt.show()
