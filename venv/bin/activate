@@ -1,3 +1,4 @@
+
 # This file must be used with "source bin/activate" *from bash*
 # you cannot run it directly
 
@@ -67,3 +68,5 @@ fi
 if [ -n "${BASH:-}" -o -n "${ZSH_VERSION:-}" ] ; then
     hash -r 2> /dev/null
 fi
+export PYTHONPATH=/home/dayvd/code/sportefastapi:$PYTHONPATH
+
